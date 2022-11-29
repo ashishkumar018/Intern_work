@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+    /* color: rgb(255, 255, 255); */
+
+}
+
+/* -----------------------------------    header css    --------------------------------------------------------- */
+
+header{
+    display: flex;
+    flex-direction: row;
+    /* background-color:#7c71ce; */
+    background: linear-gradient(90deg, #776BCC, #C7C5F4, #776BCC);
+
+    height: 5em;
+    justify-content:space-between;
+    /* width: 2em; */
+}
+
+#div2{
+    float: right;
+    width:50%;
+    display: flex;
+    justify-content:space-between;
+}
+#div2 a, #div1 a{
+    padding: 26px 21px;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    margin-inline: auto;
+    text-align:center;
+    font-size:large;
+    color: white;
+    /* margin-block: auto; */
+    
+}
+
+#div1 a{
+    text-align: start;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: serif;
+    padding-left: 1.7em;
+    color:bisque;
+    /* padding bottom: 1em; */
+    padding-bottom: 1em;
+}
+
+#div2 a:hover{
+    /* backcolor:#c1bff2; */
+    background-color: #66649d;
+    /* text-decoration: line-through; */
+}
+
+
+
+
+
+/* **************************************   map container css   ************************************************* */
+html, body, #map-container {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+  }
+
+
+
