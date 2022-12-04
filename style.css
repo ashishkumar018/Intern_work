@@ -60,11 +60,27 @@ header{
 
 
 /* **************************************   map container css   ************************************************* */
-html, body, #map-container {
+/* html, body{
     margin: 0;
     height: 100%;
     width: 100%;
     font-family: sans-serif;
+  } */
+
+
+  .map {
+    width: 100%;
+    height: 650px;
+  }
+  .map:-webkit-full-screen {
+    height: 100%;
+    margin: 0;
+  }
+  .map:fullscreen {
+    height: 100%;
+  }
+  .map .ol-rotate {
+    top: 3em;
   }
 
 

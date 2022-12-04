@@ -7,6 +7,7 @@
       @import "node_modules/ol/ol.css";
     </style>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./LOGIN_FORM/form-style.css">
   </head>
   <body>
     <header>
@@ -23,7 +24,12 @@
         <!-- <a href="../IndGEOS/LOGIN_FORM/form.html">Log-In</a> -->
       </div>
     </header>
-    <div id="map-container"></div>
-    <script src="./main.js" type="module"></script>
+    <!-- <div id="map-container"></div> -->
+    <div id="map" class="map"></div>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <div id="info">&nbsp;</div>
+    <script src="https://unpkg.com/elm-pep@1.0.6/dist/elm-pep.js"></script>
+    <script type="module" src="./main.js"></script>
+    <!-- <script src="./main.js" type="module"></script> -->
   </body>
 </html>
