@@ -24,10 +24,15 @@
     </header>
     <!-- <div id="map-container"></div> -->
     <div id="map" class="map"></div>
-    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <!-- <div id="overlay"
+    style="background-color: rgb(230, 230, 230); border-radius: 10px; border: 1px solid black; padding: 5px 10px;">
+    </div> -->
+    <!-- this div is added for overlay to display coordinate same as ol3(openlayerbook) -->
     <div id="info">&nbsp;</div>
     <script src="https://unpkg.com/elm-pep@1.0.6/dist/elm-pep.js"></script>
     <script type="module" src="./main.js"></script>
-    <!-- <script src="./main.js" type="module"></script> -->
+    <!-- <script src="./javascripts_files/ol.js"></script> -->
+    <!-- added ol.js to add coordinate functionality which I previosly used in ol3(OpenLayerbook) but it is not working here. -->
+    
   </body>
 </html>

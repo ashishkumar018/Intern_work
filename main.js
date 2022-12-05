@@ -47,7 +47,8 @@ const attributions =
 const raster = new TileLayer({
   source: new XYZ({
     attributions: attributions,
-    url: 'https://api.maptiler.com/tiles/satellite/{z}/{x}/{y}.jpg?key=' + key,
+    // url: 'https://api.maptiler.com/tiles/satellite/{z}/{x}/{y}.jpg?key=' + key,
+    url: 'https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=' + key,
     maxZoom: 20,
   }),
 });
@@ -58,6 +59,7 @@ const vector = new VectorLayer({
     format: new KML(),
   }),
 });
+
 
 const map = new Map({
   controls: defaultControls().extend([new FullScreen()]),

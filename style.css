@@ -1,20 +1,31 @@
-*{
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0;
-    /* color: rgb(255, 255, 255); */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
 }
 
-/* -----------------------------------    header css    --------------------------------------------------------- */
+body {
+	/* background: linear-gradient(90deg, #C7C5F4, #776BCC);		 */
+	background: #3787ad;
+}
+
+.map{
+	height: 630px;
+}
+
+
 
 header{
     display: flex;
     flex-direction: row;
     /* background-color:#7c71ce; */
-    background: linear-gradient(90deg, #776BCC, #C7C5F4, #776BCC);
+    /* background: linear-gradient(90deg, #776BCC, #C7C5F4, #776BCC); */
+    background: linear-gradient(90deg, #1c2224, #1e84b2);
 
-    height: 5em;
+    height: 4em;
     justify-content:space-between;
     /* width: 2em; */
 }
@@ -26,7 +37,7 @@ header{
     justify-content:space-between;
 }
 #div2 a, #div1 a{
-    padding: 26px 21px;
+    padding: 1em 1em;
     display: inline-block;
     width: 100%;
     text-decoration: none;
@@ -45,43 +56,15 @@ header{
     font-family: serif;
     padding-left: 1.7em;
     color:bisque;
+    padding: 0.5em 1em;
+
     /* padding bottom: 1em; */
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
+	
 }
 
 #div2 a:hover{
     /* backcolor:#c1bff2; */
-    background-color: #66649d;
+    background-color: black;
     /* text-decoration: line-through; */
 }
-
-
-
-
-
-/* **************************************   map container css   ************************************************* */
-/* html, body{
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    font-family: sans-serif;
-  } */
-
-
-  .map {
-    width: 100%;
-    height: 650px;
-  }
-  .map:-webkit-full-screen {
-    height: 100%;
-    margin: 0;
-  }
-  .map:fullscreen {
-    height: 100%;
-  }
-  .map .ol-rotate {
-    top: 3em;
-  }
-
-
-
