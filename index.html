@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>indGEOS</title>
-    <style>
-      @import "node_modules/ol/ol.css";
-    </style>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./LOGIN_FORM/form-style.css">
-  </head>
-  <body>
-    <header>
-      <div class="divs" id="div1">
-       <a href="./index.html">indGEOS</a>
-      </div>
-  
-      <div class="divs" id="div2">
-        <a href="./index.html">Home</a>
-        <a href="#">About</a>
-        <a href="#">contact</a>
-        <a href="./LOGIN_FORM/form.html">Log-In</a>
-      </div>
-    </header>
-    <div id="map" class="map"></div>
-    <div id="popup" class="ol-popup">
-      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
-      <div id="popup-content"></div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./all_styles/form-style.css">
+    <link rel="stylesheet" href="./all_styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login">
+                    <div class="login__field">
+                        <i class="login__icon fa fa-user"></i>
+                        <input type="text" class="login__input" id="username" placeholder="User name / Email">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fa fa-lock"></i>
+                        <input type="password" class="login__input" id="password" placeholder="Password">
+                    </div>
+                    <button class="button login__submit">
+                        <!-- <span class="button__text" onclick="test()">Log In Now</span> -->
+                        <a  href="./main.html"  class="button__text" onclick="test()">Log In Now</a>
+                        <i class="button__icon fa fa-chevron-right"></i>
+                    </button>				
+                </form>
+                
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
     </div>
-    <div id="info">&nbsp;</div>
-    <script src="https://unpkg.com/elm-pep@1.0.6/dist/elm-pep.js"></script>
-    <script type="module" src="./main.js"></script>
-   
-    <footer>
-      <!-- <div>© MapTiler © OpenStreetMap contributors </div> -->
-      <!-- i button is already there -->
-    </footer>
-  </body>
+    
+    <script src="./scripts/form-script.js"></script>
+</body>
 </html>
