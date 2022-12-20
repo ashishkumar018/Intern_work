@@ -12,6 +12,7 @@ import { Draw, Modify, Snap } from "ol/interaction";
 import { OSM, Vector as VectorSource } from "ol/source";
 // import { Tile as TileLayer, Vector as VectorLayer } from "ol/layer";
 import { get } from "ol/proj";
+import { Circle, LineString, Point } from "ol/geom";
 
 
 
@@ -124,8 +125,55 @@ map.on("singleclick", function (evt) {
   const coordinate = evt.coordinate;
   const hdms = toStringHDMS(toLonLat(coordinate));
 
+    // confirm("Press a button!");
+  
+  // alert(hdms);
+
   content.innerHTML = "<p>You clicked here:</p><code>" + hdms + "</code>";
+
+
+  
   overlay.setPosition(coordinate);
+
+  let text = "Do you want to save this point" + hdms;
+  if (confirm(text) == true) {
+    var atype = "point clicked";
+    const typeSelected = document.getElementById('type').value;
+    // alert(typeSelected);
+    if(typeSelected== "LineString"){
+      atype="line selected";
+    }
+
+    if(typeSelected== "Polygon"){
+      atype= "polygen selected";
+    }
+    if(typeSelected== "Circle"){
+      atype= "circle selected";
+    }
+    
+    // var atype = "point clicked";
+    var new_data = hdms;
+    if(localStorage.getItem(atype)==null){
+      localStorage.setItem(atype,'[]');
+    }
+
+    var old_data= JSON.parse(localStorage.getItem(atype));
+    old_data.push(new_data);
+    localStorage.setItem(atype, JSON.stringify(old_data));
+
+
+    content.innerHTML = "<p>You clicked here:</p><code>" + hdms + "</code>";
+
+
+  
+    overlay.setPosition(coordinate);
+
+  }
+
+  else{
+    content.innerHTML = "<p>You clicked here:</p><code>" + hdms + "</code>";
+    overlay.setPosition(coordinate);
+  }
 });
 
 const displayFeatureInfo = function (pixel) {
