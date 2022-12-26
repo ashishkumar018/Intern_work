@@ -124,6 +124,10 @@
 	transition: .2s;
 }
 
+.login__submit a{
+	color: #1e84b2;
+}
+
 .login__submit:active,
 .login__submit:focus,
 .login__submit:hover {
