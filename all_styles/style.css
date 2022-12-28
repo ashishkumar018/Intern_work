@@ -218,7 +218,7 @@ nav .content .links {
 }
 
 .search-box input {
-  width: 90%;
+  width: 38%;
   height: 100%;
   border: none;
   outline: none;
@@ -231,7 +231,7 @@ nav .content .links {
   height: 40px;
   border-radius: 4px;
   margin-top: 6px;
-  margin-inline-start: 9em;
+  margin-inline-start: 54em;
 }
 
 .search-box input::placeholder {
